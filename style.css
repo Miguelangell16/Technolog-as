@@ -1,0 +1,55 @@
+.circle{
+   width: 200px;         /* Ancho del círculo */
+  height: 200px;        /* Alto del círculo */
+  background-color: red; /* Color de fondo del círculo */
+  border-radius: 50%;    /* Hace que los bordes sean redondeados, creando el círculo */
+  margin: 50px;    
+  position: relative;
+  top: 100px;
+  left:300px;
+  animation-name:move-it;
+  animation-duration: 7s;
+  animation-iteration-count:infinite;
+}
+@keyframes
+move-it{
+  from{
+    background-color:blue;
+    top: 100px;
+    left:150px;
+    height:200px;
+    wight:200px;
+     }
+  to{
+     background-color:red;
+    bottom: 100px;
+    right: 150px;
+     height:350px;
+    wight:350px;
+    
+  }
+  @keyframes 
+  move-it {
+    0%{
+      top: 0;
+      left: 0;
+    }
+    25%{
+      top: 80px;
+    }
+    40%{
+      left:50px;
+    }
+    60%{
+      top: 100px;
+    }
+    80%{
+      left: 80%;
+    }
+    100%{
+      top:150px;
+      left:120px;
+    }
+  }
+  
+}
